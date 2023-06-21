@@ -104,6 +104,62 @@ int main()
     //Output of the full name
     cout<<"Your full name is:"<<fullJina<<endl;
 
+    /*Writing a program that calculates the sales tax of a transaction given the sales ammount
+    The tax is 9%. Use a constant to define the tax rate*/
+    //Step 1: Define the variables
+    int sales;
+    const double taxRate=0.09;
+    double taxAmount;
+    double amountDue;
+
+    //Step two: ENtering the sales amount
+    cout<<"The sales amount is:";
+    cin>>sales;
+
+    //Step3: Calculate the tax
+    taxAmount = taxRate * sales;
+    amountDue = sales-taxAmount;
+
+    //Step4: Output the tax result
+    cout<<"The sales amount:"<<sales<<endl;
+    cout<<"The Tax amount:"<<taxAmount<<endl;
+    cout<<"Total Amount Due:"<<amountDue<<endl;
+
+    /*Last task of chapter 2: Writing a program that prints the address when given the Street number,
+    Street name, City name, State name and Zip code.
+    The format should be: street-number. street city, state zip-code*/
+
+    //Step1: Define the variables
+    string streetNumber;
+    string streetName;
+    string cityName;
+    string stateName;
+    string zipCode;
+    string address;
+    string space3=" ";
+    string comma=",";
+
+    //Step2: Entering the variables names
+    cout<<"Street number is:";
+    cin>>streetNumber;
+    cout<<"Street Name is:";
+    cin>>streetName;
+    cout<<"City Name is:";
+    cin>>cityName;
+    cout<<"State Name is:";
+    cin>>stateName;
+    cout<<"Zip Code is:";
+    cin>>zipCode;
+
+    //Step3: Formula for adding the address
+    address = streetNumber+comma+space3+cityName+comma+space3+stateName+comma+space3+zipCode;
+
+    //Step4: Output for the address
+    cout<<"The address is:"<<address<<endl;
+
+    /*End of Chapter 2 tasks. I performed quite well. I had a grasp of data types. I learnt integers, characters, Booleans, strings and floats.
+    Throughout the chapter, I have practised manipulating data. Giving inputs and getting outputs. I have also learned operators.*/
+
     return 0;
 
 }
